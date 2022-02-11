@@ -1,12 +1,30 @@
-﻿<Window x:Class="_01_XAML_Basic.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:_01_XAML_Basic"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+﻿<Window
+    x:Class="_01_XAML_Basic.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:_01_XAML_Basic"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="800"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid
+        x:Name="MainGrid"
+        Background="LightGreen"
+        MouseUp="MainGrid_MouseUp">
+        <Button
+            Width="200"
+            Height="50"
+            Background="LightBlue">
+            <Button.FontWeight>Bold</Button.FontWeight>
+            <Button.Content>
+                <WrapPanel>
+                    <TextBlock Foreground="Yellow">Yellow</TextBlock>
+                    <TextBlock Foreground="Pink">Pink</TextBlock>
+                    <TextBlock>Click Me</TextBlock>
+                </WrapPanel>
+            </Button.Content>
+        </Button>
     </Grid>
 </Window>

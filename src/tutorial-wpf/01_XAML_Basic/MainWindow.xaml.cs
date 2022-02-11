@@ -23,6 +23,17 @@ namespace _01_XAML_Basic
         public MainWindow()
         {
             InitializeComponent();
+            MainGrid.MouseUp += MainGrid_MouseUp1;
+        }
+
+        private void MainGrid_MouseUp1(object sender, MouseButtonEventArgs e)
+        {
+            _ = MessageBox.Show("The subscribe event in your code had been fired.");
+        }
+
+        private void MainGrid_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            _ = MessageBox.Show($"Clicked at position: [ {e.GetPosition(this)} ]");
         }
     }
 }
