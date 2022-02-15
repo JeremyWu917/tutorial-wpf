@@ -12,9 +12,24 @@
     mc:Ignorable="d">
     <Grid
         x:Name="MainGrid"
-        Background="LightGreen"
+        Background="LightSeaGreen"
         MouseUp="MainGrid_MouseUp">
+        <!--  3 Columns  -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <!--  3 Rows  -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200" />
+            <RowDefinition Height="200" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!--  Location on 2nd rows and 2nd columns  -->
         <Button
+            Grid.Row="1"
+            Grid.Column="1"
             Width="200"
             Height="50"
             Background="LightBlue">
