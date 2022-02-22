@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "02_Wpf_App": {
+      "commandName": "Project",
+      "commandLineArgs": "c:\\Windows\\win.ini"
+    }
+  }
+}
